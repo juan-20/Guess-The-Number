@@ -1,0 +1,333 @@
+.fill{
+    fill: #e2e2e2;
+}
+
+.number{
+    display: flex;
+    flex-direction: column;
+}
+
+.sides{
+    display: flex;
+    gap: 24px;
+}
+
+/* um: */
+.numberOne .number .sides .right-top > path{
+    fill: #262a34;
+}
+  .numberOne .number .sides .right-bottom > path {
+    fill: #262a34;
+}
+
+.numberOneSucess .number .sides .right-top > path{
+    fill: #32bf00;
+}
+.numberOneSucess .number .sides .right-bottom > path {
+    fill: #32bf00;
+}
+  
+/* dois */
+.numberTwo .number .sides .right-top > path{
+    fill: #262a34;
+}
+.numberTwo .number .center > path{
+    fill: #262a34;
+}
+.numberTwo .number .sides .left-bottom > path {
+    fill: #262a34;
+}
+.numberTwo .number .top > path {
+    fill: #262a34;
+}
+.numberTwo .number .bottom > path {
+    fill: #262a34;
+}
+
+.numberTwoSucess .number .sides .right-top > path{
+    fill: #32bf00;
+}
+.numberTwoSucess .number .center > path{
+    fill: #32bf00;
+}
+.numberTwoSucess .number .sides .left-bottom > path {
+    fill: #32bf00;
+}
+.numberTwoSucess .number .top > path {
+    fill: #32bf00;
+}
+.numberTwoSucess .number .bottom > path {
+    fill: #32bf00;
+}
+
+/* três */
+.numberThree .number .top > path {
+    fill: #262a34;
+}
+.numberThree .number .sides .right-top > path{
+    fill: #262a34;
+}
+.numberThree .number .center > path{
+    fill: #262a34;
+}
+.numberThree .number .sides .right-bottom > path {
+    fill: #262a34;
+}
+.numberThree .number .bottom > path {
+    fill: #262a34;
+}
+
+.numberThreeSucess .number .top > path {
+    fill: #32bf00;
+}
+.numberThreeSucess .number .sides .right-top > path{
+    fill: #32bf00;
+}
+.numberThreeSucess .number .center > path{
+    fill: #32bf00;
+}
+.numberThreeSucess .number .sides .right-bottom > path {
+    fill: #32bf00;
+}
+.numberThreeSucess .number .bottom > path {
+    fill: #32bf00;
+}
+
+/* quatro */
+.numberFour .number .sides .left-top > path {
+    fill: #262a34;
+}
+.numberFour .number .sides .right-top > path{
+    fill: #262a34;
+}
+.numberFour .number .center > path{
+    fill: #262a34;
+}
+.numberFour .number .sides .right-bottom > path {
+    fill: #262a34;
+}
+.numberFourSucess .number .sides .left-top > path {
+    fill: #32bf00;
+}
+.numberFourSucess .number .sides .right-top > path{
+    fill: #32bf00;
+}
+.numberFourSucess .number .center > path{
+    fill: #32bf00;
+}
+.numberFourSucess .number .sides .right-bottom > path {
+    fill: #32bf00;
+}
+
+/* cinco */
+.numberFive .number .top > path {
+    fill: #262a34;
+}
+.numberFive .number .sides .left-top > path{
+    fill: #262a34;
+}
+.numberFive .number .center > path{
+    fill: #262a34;
+}
+.numberFive .number .sides .right-bottom > path {
+    fill: #262a34;
+}
+.numberFive .number .bottom > path {
+    fill: #262a34;
+}
+.numberFiveSucess .number .top > path {
+    fill: #32bf00;
+}
+.numberFiveSucess .number .sides .left-top > path{
+    fill: #32bf00;
+}
+.numberFiveSucess .number .center > path{
+    fill: #32bf00;
+}
+.numberFiveSucess .number .sides .right-bottom > path {
+    fill: #32bf00;
+}
+.numberFiveSucess .number .bottom > path {
+    fill: #32bf00;
+}
+
+/* seis */
+.numberSix .number .top > path {
+    fill: #262a34;
+}
+.numberSix .number .sides .left-top > path{
+    fill: #262a34;
+}
+.numberSix .number .center > path{
+    fill: #262a34;
+}
+.numberSix .number .sides .right-bottom > path {
+    fill: #262a34;
+}
+.numberSix .number .sides .left-bottom > path {
+    fill: #262a34;
+}
+.numberSix .number .bottom > path {
+    fill: #262a34;
+}
+.numberSixSucess .number .top > path {
+    fill: #32bf00;
+}
+.numberSixSucess .number .sides .left-top > path{
+    fill: #32bf00;
+}
+.numberSixSucess .number .center > path{
+    fill: #32bf00;
+}
+.numberSixSucess .number .sides .right-bottom > path {
+    fill: #32bf00;
+}
+.numberSixSucess .number .sides .left-bottom > path {
+    fill: #32bf00;
+}
+.numberSixSucess .number .bottom > path {
+    fill: #32bf00;
+}
+
+/* sete */
+.numberSeven .number .top > path {
+    fill: #262a34;
+}
+.numberSeven .number .sides .right-top > path {
+    fill: #262a34;
+}
+
+.numberSeven .number .sides .right-bottom > path {
+    fill: #262a34;
+}
+.numberSevenSucess .number .top > path {
+    fill: #32bf00;
+}
+.numberSevenSucess .number .sides .right-top > path {
+    fill: #32bf00;
+}
+
+.numberSevenSucess .number .sides .right-bottom > path {
+    fill: #32bf00;
+}
+
+/* oito */
+.numberEight .number .top > path {
+    fill: #262a34;
+}
+.numberEight .number .sides .left-top > path{
+    fill: #262a34;
+}
+.numberEight .number .sides .right-top > path{
+    fill: #262a34;
+}
+.numberEight .number .center > path{
+    fill: #262a34;
+}
+.numberEight .number .sides .right-bottom > path {
+    fill: #262a34;
+}
+.numberEight .number .sides .left-bottom > path {
+    fill: #262a34;
+}
+.numberEight .number .bottom > path {
+    fill: #262a34;
+}
+.numberEightSucess .number .top > path {
+    fill: #32bf00;
+}
+.numberEightSucess .number .sides .left-top > path{
+    fill: #32bf00;
+}
+.numberEightSucess .number .sides .right-top > path{
+    fill: #32bf00;
+}
+.numberEightSucess .number .center > path{
+    fill: #32bf00;
+}
+.numberEightSucess .number .sides .right-bottom > path {
+    fill: #32bf00;
+}
+.numberEightSucess .number .sides .left-bottom > path {
+    fill: #32bf00;
+}
+.numberEightSucess .number .bottom > path {
+    fill: #32bf00;
+}
+
+/* nove */
+.numberNine .number .top > path {
+    fill: #262a34;
+}
+.numberNine .number .sides .left-top > path{
+    fill: #262a34;
+}
+.numberNine .number .sides .right-top > path{
+    fill: #262a34;
+}
+.numberNine .number .center > path{
+    fill: #262a34;
+}
+.numberNine .number .sides .right-bottom > path {
+    fill: #262a34;
+}
+.numberNine .number .bottom > path {
+    fill: #262a34;
+}
+.numberNineSucess .number .top > path {
+    fill: #32bf00;
+}
+.numberNineSucess .number .sides .left-top > path{
+    fill: #32bf00;
+}
+.numberNineSucess .number .sides .right-top > path{
+    fill: #32bf00;
+}
+.numberNineSucess .number .center > path{
+    fill: #32bf00;
+}
+.numberNineSucess .number .sides .right-bottom > path {
+    fill: #32bf00;
+}
+.numberNineSucess .number .bottom > path {
+    fill: #32bf00;
+}
+
+/* zero */
+
+.numberZero .number .top > path {
+    fill: #262a34;
+}
+.numberZero .number .sides .left-top > path{
+    fill: #262a34;
+}
+.numberZero .number .sides .right-top > path{
+    fill: #262a34;
+}
+.numberZero .number .sides .right-bottom > path {
+    fill: #262a34;
+}
+.numberZero .number .sides .left-bottom > path {
+    fill: #262a34;
+}
+.numberZero .number .bottom > path {
+    fill: #262a34;
+}
+.numberZeroSucess .number .top > path {
+    fill: #32bf00;
+}
+.numberZeroSucess .number .sides .left-top > path{
+    fill: #32bf00;
+}
+.numberZeroSucess .number .sides .right-top > path{
+    fill: #32bf00;
+}
+.numberZeroSucess .number .sides .right-bottom > path {
+    fill: #32bf00;
+}
+.numberZeroSucess .number .sides .left-bottom > path {
+    fill: #32bf00;
+}
+.numberZeroSucess .number .bottom > path {
+    fill: #32bf00;
+}

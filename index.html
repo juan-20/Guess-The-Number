@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="numbers.css" />
+</head>
+   <body>
+   
+    <div id="loader" class="loader"></div>
+   
+       <div class="card" id="card" >
+                <h1 class="title-card">Qual o número?</h1>
+                <label id="result" ></label>
+                <section>
+
+               <div aria-label="Último número digitado" class="display">
+
+                 <div id="LedFirstNumber" class="">
+                   <div class="number ">
+                    <svg class="top"  width="47" height="12" viewBox="0 0 47 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path class="fill" d="M38.7066 0.00259067H8.76237L0.787758 5.88099L8.76237 11.7602H20.1791H27.2898H38.7066L46.6812 5.88099L38.7066 0.00259067Z" fill="#DDDDDD"/>
+                     </svg>
+                     <div class="sides">
+                     <svg class="left-top" width="12" height="48" viewBox="0 0 12 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path class="fill" d="M1.43006 0.094102C0.636383 1.06844 0.159065 2.31103 0.159065 3.66485V42.0231C0.159065 44.2219 1.41584 46.1232 3.24855 47.0589L11.8922 40.5809V9.81937L1.43006 0.094102" fill="#DDDDDD"/>
+                     </svg>
+                     <svg class="right-top" width="12" height="46" viewBox="0 0 12 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path class="fill" d="M0.00756836 9.79583V39.654L8.46481 45.9923C10.258 45.0768 11.4876 43.2164 11.4876 41.0651V3.53397C11.4876 2.21706 11.0261 1.01054 10.2595 0.0610657L0.00756836 9.79583Z" fill="#DDDDDD"/>
+                     </svg>    
+                     </div>
+                     <svg class="center" width="47" height="12" viewBox="0 0 47 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path class="fill" d="M38.7066 0.00259067H8.76237L0.787758 5.88099L8.76237 11.7602H20.1791H27.2898H38.7066L46.6812 5.88099L38.7066 0.00259067Z" fill="#DDDDDD"/>
+                     </svg>
+                     <div class="sides">
+                         <svg class="left-bottom" width="12" height="48" viewBox="0 0 12 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                             <path class="fill" d="M1.43006 0.094102C0.636383 1.06844 0.159065 2.31103 0.159065 3.66485V42.0231C0.159065 44.2219 1.41584 46.1232 3.24855 47.0589L11.8922 40.5809V9.81937L1.43006 0.094102" fill="#DDDDDD"/>
+                         </svg>
+                         <svg class="right-bottom" width="12" height="46" viewBox="0 0 12 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                             <path class="fill" d="M0.00756836 9.79583V39.654L8.46481 45.9923C10.258 45.0768 11.4876 43.2164 11.4876 41.0651V3.53397C11.4876 2.21706 11.0261 1.01054 10.2595 0.0610657L0.00756836 9.79583Z" fill="#DDDDDD"/>
+                         </svg>    
+                     </div>
+                     <svg class="bottom" width="47" height="12" viewBox="0 0 47 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path class="fill" d="M38.7066 0.00259067H8.76237L0.787758 5.88099L8.76237 11.7602H20.1791H27.2898H38.7066L46.6812 5.88099L38.7066 0.00259067Z" fill="#DDDDDD"/>
+                     </svg>
+                         
+                    </div>
+                </div>
+
+                 <div id="LedSecondNumber" class="">
+                   <div class="number ">
+                    <svg class="top"  width="47" height="12" viewBox="0 0 47 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path class="fill" d="M38.7066 0.00259067H8.76237L0.787758 5.88099L8.76237 11.7602H20.1791H27.2898H38.7066L46.6812 5.88099L38.7066 0.00259067Z" fill="#DDDDDD"/>
+                     </svg>
+                     <div class="sides">
+                     <svg class="left-top" width="12" height="48" viewBox="0 0 12 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path class="fill" d="M1.43006 0.094102C0.636383 1.06844 0.159065 2.31103 0.159065 3.66485V42.0231C0.159065 44.2219 1.41584 46.1232 3.24855 47.0589L11.8922 40.5809V9.81937L1.43006 0.094102" fill="#DDDDDD"/>
+                     </svg>
+                     <svg class="right-top" width="12" height="46" viewBox="0 0 12 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path class="fill" d="M0.00756836 9.79583V39.654L8.46481 45.9923C10.258 45.0768 11.4876 43.2164 11.4876 41.0651V3.53397C11.4876 2.21706 11.0261 1.01054 10.2595 0.0610657L0.00756836 9.79583Z" fill="#DDDDDD"/>
+                     </svg>    
+                     </div>
+                     <svg class="center" width="47" height="12" viewBox="0 0 47 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path class="fill" d="M38.7066 0.00259067H8.76237L0.787758 5.88099L8.76237 11.7602H20.1791H27.2898H38.7066L46.6812 5.88099L38.7066 0.00259067Z" fill="#DDDDDD"/>
+                     </svg>
+                     <div class="sides">
+                         <svg class="left-bottom" width="12" height="48" viewBox="0 0 12 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                             <path class="fill" d="M1.43006 0.094102C0.636383 1.06844 0.159065 2.31103 0.159065 3.66485V42.0231C0.159065 44.2219 1.41584 46.1232 3.24855 47.0589L11.8922 40.5809V9.81937L1.43006 0.094102" fill="#DDDDDD"/>
+                         </svg>
+                         <svg class="right-bottom" width="12" height="46" viewBox="0 0 12 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                             <path class="fill" d="M0.00756836 9.79583V39.654L8.46481 45.9923C10.258 45.0768 11.4876 43.2164 11.4876 41.0651V3.53397C11.4876 2.21706 11.0261 1.01054 10.2595 0.0610657L0.00756836 9.79583Z" fill="#DDDDDD"/>
+                         </svg>    
+                     </div>
+                     <svg class="bottom" width="47" height="12" viewBox="0 0 47 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path class="fill" d="M38.7066 0.00259067H8.76237L0.787758 5.88099L8.76237 11.7602H20.1791H27.2898H38.7066L46.6812 5.88099L38.7066 0.00259067Z" fill="#DDDDDD"/>
+                     </svg>
+                         
+                    </div>
+                </div>
+
+                <div id="LedThirdNumber" class="">
+                    <div class="number ">
+                     <svg class="top"  width="47" height="12" viewBox="0 0 47 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="fill" d="M38.7066 0.00259067H8.76237L0.787758 5.88099L8.76237 11.7602H20.1791H27.2898H38.7066L46.6812 5.88099L38.7066 0.00259067Z" fill="#DDDDDD"/>
+                      </svg>
+                      <div class="sides">
+                      <svg class="left-top" width="12" height="48" viewBox="0 0 12 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path class="fill" d="M1.43006 0.094102C0.636383 1.06844 0.159065 2.31103 0.159065 3.66485V42.0231C0.159065 44.2219 1.41584 46.1232 3.24855 47.0589L11.8922 40.5809V9.81937L1.43006 0.094102" fill="#DDDDDD"/>
+                      </svg>
+                      <svg class="right-top" width="12" height="46" viewBox="0 0 12 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path class="fill" d="M0.00756836 9.79583V39.654L8.46481 45.9923C10.258 45.0768 11.4876 43.2164 11.4876 41.0651V3.53397C11.4876 2.21706 11.0261 1.01054 10.2595 0.0610657L0.00756836 9.79583Z" fill="#DDDDDD"/>
+                      </svg>    
+                      </div>
+                      <svg class="center" width="47" height="12" viewBox="0 0 47 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path class="fill" d="M38.7066 0.00259067H8.76237L0.787758 5.88099L8.76237 11.7602H20.1791H27.2898H38.7066L46.6812 5.88099L38.7066 0.00259067Z" fill="#DDDDDD"/>
+                      </svg>
+                      <div class="sides">
+                          <svg class="left-bottom" width="12" height="48" viewBox="0 0 12 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path class="fill" d="M1.43006 0.094102C0.636383 1.06844 0.159065 2.31103 0.159065 3.66485V42.0231C0.159065 44.2219 1.41584 46.1232 3.24855 47.0589L11.8922 40.5809V9.81937L1.43006 0.094102" fill="#DDDDDD"/>
+                          </svg>
+                          <svg class="right-bottom" width="12" height="46" viewBox="0 0 12 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path class="fill" d="M0.00756836 9.79583V39.654L8.46481 45.9923C10.258 45.0768 11.4876 43.2164 11.4876 41.0651V3.53397C11.4876 2.21706 11.0261 1.01054 10.2595 0.0610657L0.00756836 9.79583Z" fill="#DDDDDD"/>
+                          </svg>    
+                      </div>
+                      <svg class="bottom" width="47" height="12" viewBox="0 0 47 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path class="fill" d="M38.7066 0.00259067H8.76237L0.787758 5.88099L8.76237 11.7602H20.1791H27.2898H38.7066L46.6812 5.88099L38.7066 0.00259067Z" fill="#DDDDDD"/>
+                      </svg>
+                          
+                     </div>
+                 </div>
+                
+               </div>
+            </section>
+
+               <div class="resetButton" id="resetButton" onclick="reset()" >
+                    <img src="./assets/refresh_24pxnewParty.svg" alt="">
+                    <p type="button">Nova Partida</p>
+                </div>
+
+               <div class="send-box">
+               <input type="number" class="input" placeholder="Digite o palpite" id="number">
+               <input type="button" value="Enviar" class="button" onclick="send()">
+            </div>
+        </div>
+        
+        
+                <div class="hide" id="error">
+                    <img src="https://abs.twimg.com/sticky/illustrations/empty-states/rubber-chicken-400x200.v1.png" alt="">
+                    <h1>Ops, caiu tudo</h1>
+                    <div class="explanation">
+                        <p>Parece que nosso servidor caiu :/. Tente atualizar a página</p>
+                    </div>
+                </div>
+                      
+  
+       <script src="app.js"></script>
+   </body>
+ 
+        
+   </html>

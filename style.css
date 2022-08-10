@@ -1,0 +1,208 @@
+@import url("http://fonts.cdnfonts.com/css/digital-numbers");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e5e5e5;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #EF6C00;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #EF6C00;
+    background: #fff;
+    height: 550px;
+    width: 1000px;
+    padding: 30px;
+}
+
+.title-card{
+    border-bottom: 1px solid #CFCFCF;
+    font-size: 24px;
+}
+
+label{
+    font-size: 16px;
+    margin-top: 90px;
+    margin-bottom: 35px;
+    font-weight: bold;
+}
+
+.sucess{
+    color: #32BF00;
+}
+
+.error{
+    color: #CC3300;
+    text-transform: uppercase;
+    fill: #CC3300;
+}
+
+.default{
+    color: #FF6600;
+}
+
+.show{
+    visibility: visible;
+}
+
+.blind{
+    visibility: hidden;
+    background-image: linear-gradient(#434854, #9E9E9E);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    max-height: 42px;
+    padding-right: 10px;
+    padding-left: 6px;
+    margin-bottom: 73px;
+    margin-top: 55px;
+}
+
+.hide{
+    display: none;
+}
+
+
+.display {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-weight: lighter;
+  font-family: 'Digital Numbers', sans-serif;
+  letter-spacing: 3px;
+  color: #262a34;
+  font-size: 100px;
+  gap: 1rem;
+}
+
+.display .time {
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  z-index: 5;
+}
+
+.display .number-back {
+  position: absolute;
+  color: #dddd;
+  top: -90px;
+  z-index: 1;
+}
+
+.resetButton{
+    background-image: linear-gradient(#434854, #9E9E9E);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    max-height: 42px;
+    padding-right: 10px;
+    padding-left: 6px;
+    margin-bottom: 73px;
+    margin-top: 55px;
+}
+.resetButtonShow{
+    background-image: linear-gradient(#434854, #9E9E9E);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    max-height: 42px;
+    padding-right: 10px;
+    padding-left: 6px;
+    margin-bottom: 73px;
+    margin-top: 55px;
+    visibility: visible;
+}
+
+
+
+.send-box{
+    display: flex;
+    gap: 11px;
+}
+
+.input{
+    border: 1px solid #CFCFCF;
+    color: #CFCFCF;
+    width: 220px;
+    max-height: 42px;
+    border-radius: 4px;
+    padding: 14px 0px 14px 12px;
+    font-size: 12px;
+    -moz-appearance: textfield;
+}
+
+.input::-webkit-outer-spin-button, .input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input:focus{
+    color: #000;
+    outline: none;
+    border: 1px solid #EF6C00;
+}
+
+
+.button{
+    border-radius: 4px;
+    background-image: linear-gradient(#EF6C00, #C0661C);
+    color: #fff;
+    padding: 14px;
+    border: transparent;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.disabled{
+    background: #dddddd;
+    cursor: not-allowed;
+}
+
